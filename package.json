@@ -93,7 +93,7 @@
     "commit-and-tag-version": "^12.5.1",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.11.1",
+    "eslint": "^10.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jsdoc": "^50.2.4",
     "globals": "^15.0.0",
