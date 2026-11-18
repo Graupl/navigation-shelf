@@ -1,0 +1,96 @@
+{
+  "name": "@graupl/navigation-shelf",
+  "version": "1.0.0-beta.59",
+  "license": "GPL-3.0-or-later",
+  "description": "A plugin for Graupl that provides a navigation shelf component.",
+  "main": "dist/js/navigation-shelf.cjs",
+  "module": "dist/js/navigation-shelf.es.js",
+  "type": "module",
+  "files": [
+    "dist",
+    "scss",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "sass": "./scss/navigation-shelf.scss",
+      "import": "./dist/js/navigation-shelf.es.js",
+      "require": "./dist/js/navigation-shelf.cjs"
+    },
+    "./*.scss": {
+      "sass": "./scss/*.scss"
+    },
+    "./src/*.scss": {
+      "sass": "./src/scss/*.scss"
+    },
+    "./src/navigation-shelf": {
+      "import": "./src/js/navigation-shelf/NavigationShelf.js"
+    },
+    "./navigation-shelf": {
+      "import": "./dist/js/component/navigation-shelf.es.js",
+      "require": "./dist/js/component/navigation-shelf.cjs"
+    },
+    "./navigation-shelf/generator": {
+      "import": "./dist/js/generator/navigation-shelf.es.js",
+      "require": "./dist/js/generator/navigation-shelf.cjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Graupl/navigation-shelf.git"
+  },
+  "keywords": [
+    "graupl"
+  ],
+  "author": "Nick Milton",
+  "contributors": [
+    {
+      "name": "Coldfront Labs Inc.",
+      "url": "https://coldfrontlabs.ca"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Graupl/navigation-shelf/issues"
+  },
+  "homepage": "https://github.com/Graupl/navigation-shelf#readme",
+  "scripts": {
+    "presass": "rm -rf dist/css/*",
+    "precss": "rm -rf dist/css/*",
+    "sass": "sass scss:dist/css --pkg-importer=node",
+    "css": "node compile-styles.js",
+    "prerolldown": "rm -rf dist/js/*",
+    "rolldown": "rolldown --config ./rolldown.config.js",
+    "build": "npm-run-all build:*",
+    "build:css": "npm run css",
+    "build:js": "npm run rolldown",
+    "eslint": "eslint .",
+    "stylelint": "stylelint \"**/*.scss\"",
+    "prettier": "prettier \"**/*.{js,scss}\""
+  },
+  "dependencies": {
+    "@accessible-ecosystem/core": "^1.0.0-beta.14",
+    "@graupl/core": "^1.0.0-beta.58",
+    "@graupl/icons": "^1.0.0-beta.58"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsdoc": "^50.2.4",
+    "globals": "^15.0.0",
+    "lightningcss": "^1.30.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.2.5",
+    "rolldown": "^1.0.0-beta.19",
+    "rollup-plugin-esbuild": "^6.2.1",
+    "sass": "^1.89.2",
+    "sass-embedded": "^1.89.2",
+    "stylelint": "^16.3.1",
+    "stylelint-config-property-sort-order-smacss": "^10.0.0",
+    "stylelint-config-sass-guidelines": "^12.1.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-prettier": "^5.0.0",
+    "@drupal/once": "git+https://git.drupalcode.org/issue/once-3466026.git#1ae06384d98d4c70c1e3ef5550ac7559e18e2342"
+  }
+}
