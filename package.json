@@ -69,10 +69,11 @@
   },
   "dependencies": {
     "@accessible-ecosystem/core": "^1.0.0-beta.14",
-    "@graupl/core": "^1.0.0-beta.58",
-    "@graupl/icons": "^1.0.0-beta.58"
+    "@graupl/core": "^1.0.0-beta.59",
+    "@graupl/icons": "^1.0.0-beta.59"
   },
   "devDependencies": {
+    "@drupal/once": "git+https://git.drupalcode.org/issue/once-3466026.git#1ae06384d98d4c70c1e3ef5550ac7559e18e2342",
     "@eslint/js": "^9.0.0",
     "@rollup/plugin-babel": "^6.0.4",
     "eslint": "^9.11.1",
@@ -90,7 +91,6 @@
     "stylelint-config-property-sort-order-smacss": "^10.0.0",
     "stylelint-config-sass-guidelines": "^12.1.0",
     "stylelint-config-standard-scss": "^13.1.0",
-    "stylelint-prettier": "^5.0.0",
-    "@drupal/once": "git+https://git.drupalcode.org/issue/once-3466026.git#1ae06384d98d4c70c1e3ef5550ac7559e18e2342"
+    "stylelint-prettier": "^5.0.0"
   }
 }
