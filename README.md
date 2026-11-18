@@ -1,7 +1,7 @@
 # Graupl Navigation Shelf
 
 [![Latest release](https://img.shields.io/npm/v/@graupl/navigation-shelf?label=RELEASE&style=for-the-badge)](https://www.npmjs.com/package/@graupl/navigation-shelf)
-[![License](https://img.shields.io/github/license/Graupl/navigation-shelf?style=for-the-badge)](/LICENSE)
+[![License](https://img.shields.io/github/license/Graupl/navigation-shelf?style=for-the-badge)](LICENSE)
 [![Tests](https://img.shields.io/github/actions/workflow/status/Graupl/navigation-shelf/test.yml?branch=1.x&label=Tests&style=for-the-badge)](https://github.com/Graupl/navigation-shelf/actions/workflows/test.yml)
 [![GitHub CodeQL](https://img.shields.io/github/actions/workflow/status/Graupl/navigation-shelf/codeql-analysis.yml?branch=1.x&label=CodeQL&style=for-the-badge)](https://github.com/Graupl/navigation-shelf/actions/workflows/codeql-analysis.yml)
 
