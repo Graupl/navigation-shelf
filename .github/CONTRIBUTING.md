@@ -62,6 +62,12 @@ Run `npm run test:unit` for unit tests. Install Playwright browsers with `npx --
 
 Use `npm pack --dry-run` to check which files npm will publish.
 
+Use `npm run lint` to apply lint and formatting fixes. Review the changes before committing.
+
+## Prepare a release
+
+Run `npm run release -- --prerelease beta` for a beta or `npm run release` for a stable release. The command runs lint, build, and unit checks, updates the manifest and lockfile, writes the changelog and release notes, and creates a local commit and tag. Pushing the tag starts the GitHub release and npm publishing workflow.
+
 ## Commit guidelines
 
 Write commit messages using [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). For example:
